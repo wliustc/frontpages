@@ -3,9 +3,14 @@
 	<meta charset="UTF-8">
 	<title>HomePage</title>
 	<style>
-	.div-banner{ float:left;width:33%;hight:100px;border:1px solid #F00}
-	.div-productImg{ float:left;width:30%;border:1px solid #000}
+	.div-header{text-align: center;height: 30px}
+	.div-banner{ text-align:center;float:left;width:33%;height:30px;border:1px solid #F00}
+	.div-productImg{ float:left;width:30%;border:1px solid #000;overflow:hidden}
+	.div-productImg img{max-width:257px;_width:expression(this.width > 257 ? "250px" : this.width);}
 	.div-prodDesc{ float:left;width:69%;border:1px solid #000}
+	.prodName{ height: 100px }
+	.prodPrice{ height: 50px }
+	.prodDetail{ height: 110px}
 	</style> 
 
     <script language="JavaScript" type="text/javascript">
@@ -21,7 +26,7 @@
 </head>
 <body>
 	<header>
-		<div>This is Header</div>
+		<div class="div-header">This is Header</div>
 	</header>
 	<div class="container">
 		<div class="menu-container">
@@ -40,36 +45,36 @@
         <div class="ware-container" id="ware-container1">
         	<div class="product" id="prod_1">
         		<div class="div-productImg" id="img_1">
-        			<img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
+        			<img src="http://img14.360buyimg.com/n1/jfs/t2488/217/1368271544/184514/20accb9a/56985118N7c5be2fd.jpg">
         		</div>
         		<div class="div-prodDesc" id="desc_1">
-        			<div class="prodName">Name: ${name1}</div>
-        			<div class="prodPrice">Price: ${price1}</div>
-        			<div class="prodDetail">Detail: ${other Message1}</div>
+        			<div class="prodName">Beats Pro 头戴式耳机 - 黑色 录音师专业版 HiFi Detox复刻版 带麦 有线版 MHA22PA/B</div>
+        			<div class="prodPrice">￥2088.00</div>
+        			<div class="prodDetail">499-150、999-260、1999-500】神券来袭，疯抢声宴！要时尚，也要实惠！买Beats，上京东</div>
         		</div>
         	</div>
         </div>
                 <div class="ware-container" id="ware-container2" style="display:none">
             <div class="product" id="prod_1">
                 <div class="div-productImg" id="img_1">
-                    <img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
+                    <img src="http://img13.360buyimg.com/mobilecms/s250x250_jfs/t3193/289/1444301972/335514/949dc77e/57ccd2e0N21822302.jpg">
                 </div>
                 <div class="div-prodDesc" id="desc_1">
-                    <div class="prodName">Name: ${name2}</div>
-                    <div class="prodPrice">Price: ${price2}</div>
-                    <div class="prodDetail">Detail: ${other Message2}</div>
+                    <div class="prodName">九阳（Joyoung）KX-30J601多功能电烤箱30L家用专业烘焙烤箱</div>
+                    <div class="prodPrice">￥169.00</div>
+                    <div class="prodDetail">169元剁手价7日22点劲爆秒抢 嗨购24小时 数量有限 手慢无 价保11.11】家用推荐款 上下管独立控温 </div>
                 </div>
             </div>
         </div>
                 <div class="ware-container" id="ware-container3" style="display:none">
             <div class="product" id="prod_1">
                 <div class="div-productImg" id="img_1">
-                    <img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
+                    <img src="http://img14.360buyimg.com/mobilecms/s250x250_jfs/t3223/308/1124466109/74284/4db3a9d4/57c7c372Ncfbace6c.jpg">
                 </div>
                 <div class="div-prodDesc" id="desc_1">
-                    <div class="prodName">Name: ${name3}</div>
-                    <div class="prodPrice">Price: ${price3}</div>
-                    <div class="prodDetail">Detail: ${other Message3}</div>
+                    <div class="prodName">N美的（Midea）3L 单杆 蒸汽挂烫机 家用手持/挂式电熨斗YGD30A2J(蓝色)</div>
+                    <div class="prodPrice">￥199.00</div>
+                    <div class="prodDetail">【京东秒杀-199，11.7日22点至8日22点，限量抢，手慢无】3L大水箱满足120分钟不间断熨烫，四档调节，配送防烫手套！</div>
                 </div>
             </div>
         </div>
