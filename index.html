@@ -3,10 +3,21 @@
 	<meta charset="UTF-8">
 	<title>HomePage</title>
 	<style>
-	.div-banner{ float:left;width:33%;border:1px solid #F00}
+	.div-banner{ float:left;width:33%;hight:100px;border:1px solid #F00}
 	.div-productImg{ float:left;width:30%;border:1px solid #000}
 	.div-prodDesc{ float:left;width:69%;border:1px solid #000}
 	</style> 
+
+    <script language="JavaScript" type="text/javascript">
+        function ChangeTab(hiddenTabClaz,showTabId){
+            hiddenTabs=document.getElementsByClassName(hiddenTabClaz);
+            for(i=0;i<hiddenTabs.length;i++){
+                tmpTab=hiddenTabs[i];
+                tmpTab.style.display="none"; 
+            }
+            document.getElementById(showTabId).style.display="block"; 
+        }
+    </script>
 </head>
 <body>
 	<header>
@@ -15,28 +26,52 @@
 	<div class="container">
 		<div class="menu-container">
         <div class="menu-wrapper">
-            <div class="div-banner" data-wrapper="process" data-type="2">
+            <div class="div-banner" data-wrapper="process" data-type="2" onclick="ChangeTab('ware-container','ware-container1')">
                 banner1
             </div>
-            <div class="div-banner" data-wrapper="forthcoming" data-type="3">
+            <div class="div-banner" data-wrapper="forthcoming" data-type="3" onclick="ChangeTab('ware-container','ware-container2')">
                 banner2
             </div>
-            <div class="div-banner" data-wrapper="complete" data-type="4">
+            <div class="div-banner" data-wrapper="complete" data-type="4" onclick="ChangeTab('ware-container','ware-container3')">
                 banner3
             </div>
         </div>
         </div>
-        <div class="ware-container">
+        <div class="ware-container" id="ware-container1">
         	<div class="product" id="prod_1">
         		<div class="div-productImg" id="img_1">
         			<img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
         		</div>
         		<div class="div-prodDesc" id="desc_1">
-        			<div class="prodName">Name: ${name}</div>
-        			<div class="prodPrice">Price: ${price}</div>
-        			<div class="prodDetail">Detail: ${other Message}</div>
+        			<div class="prodName">Name: ${name1}</div>
+        			<div class="prodPrice">Price: ${price1}</div>
+        			<div class="prodDetail">Detail: ${other Message1}</div>
         		</div>
         	</div>
+        </div>
+                <div class="ware-container" id="ware-container2" style="display:none">
+            <div class="product" id="prod_1">
+                <div class="div-productImg" id="img_1">
+                    <img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
+                </div>
+                <div class="div-prodDesc" id="desc_1">
+                    <div class="prodName">Name: ${name2}</div>
+                    <div class="prodPrice">Price: ${price2}</div>
+                    <div class="prodDetail">Detail: ${other Message2}</div>
+                </div>
+            </div>
+        </div>
+                <div class="ware-container" id="ware-container3" style="display:none">
+            <div class="product" id="prod_1">
+                <div class="div-productImg" id="img_1">
+                    <img src="https://static.agrant.cn/zcdog/yiyuanduobao/20160908_i7P%2032%20200.jpg">
+                </div>
+                <div class="div-prodDesc" id="desc_1">
+                    <div class="prodName">Name: ${name3}</div>
+                    <div class="prodPrice">Price: ${price3}</div>
+                    <div class="prodDetail">Detail: ${other Message3}</div>
+                </div>
+            </div>
         </div>
         </div>
 </body>
