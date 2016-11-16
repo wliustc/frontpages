@@ -1,0 +1,5 @@
+(function(){
+var json = {"myZhushouHoverData":{"browsingHistoryData":[{"url":"http://www.360buy.com/product/11728617.html","title":"推荐系统：技术、评估及高效算法","img":"http://gi3.ydstatic.com/image?&url=http%3A%2F%2Fimg12.360buyimg.com%2Fn1%2Fjfs%2Ft1219%2F175%2F1364913645%2F452276%2F8e0420fa%2F559cb36bNae6c4d0c.jpg&quality=90&durl=http%3A%2F%2Fshared.ydstatic.com%2Fgouwuex%2Fimages%2Fextension_2_3%2Fdefault-img.png&w=300&h=300","cpsUrl":"http://item.jd.com/11728617.html?keyfrom=zhushou_favor_history","domainName":"京东商城","priceunit":"元","avaliable":true,"hasPromotion":false,"curPrice":114.7,"atLowerPrice":true}]}};
+    window["youdaogouwupi1479316070430"](json);
+
+})();
